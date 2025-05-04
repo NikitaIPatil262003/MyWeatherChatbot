@@ -1,0 +1,46 @@
+{
+    "dialog_nodes": [
+      {
+        "type": "standard",
+        "title": "Greeting",
+        "output": {
+          "text": {
+            "values": [
+              "Hello! I can tell you about the weather. What location are you interested in?"
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "conditions": "#greeting"
+      },
+      {
+        "type": "standard",
+        "title": "Weather Response",
+        "output": {
+          "text": {
+            "values": [
+              "Checking the weather for $location..."
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "conditions": "#ask_weather",
+        "context": {
+          "location": "<? @location ?><? @sys-location ?>"
+        }
+      },
+      {
+        "type": "standard",
+        "title": "Goodbye",
+        "output": {
+          "text": {
+            "values": [
+              "Goodbye! Come back if you need weather updates."
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "conditions": "#goodbye"
+      }
+    ]
+  }

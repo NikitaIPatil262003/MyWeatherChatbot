@@ -1,0 +1,35 @@
+{
+    "intents": [
+      {
+        "intent": "ask_weather",
+        "examples": [
+          "What's the weather?",
+          "Will it rain today?",
+          "Do I need an umbrella?",
+          "How's the weather in $location?",
+          "Temperature today",
+          "Is it sunny?",
+          "Weather forecast"
+        ]
+      },
+      {
+        "intent": "greeting",
+        "examples": [
+          "Hello",
+          "Hi",
+          "Hey",
+          "Good morning",
+          "Good afternoon"
+        ]
+      },
+      {
+        "intent": "goodbye",
+        "examples": [
+          "Bye",
+          "Goodbye",
+          "See you later",
+          "Have a nice day"
+        ]
+      }
+    ]
+  }
